@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from common_messages import Timevector
+from common_messages.msg import Timevector
 
 def callback(msg):
     print "subscribe:", msg.timestamp.secs%100, msg.vector.x, msg.vector.y, msg.vector.z
