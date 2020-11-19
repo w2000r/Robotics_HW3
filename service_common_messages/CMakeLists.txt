@@ -13,10 +13,11 @@ find_package(catkin REQUIRED COMPONENTS
  add_message_files(
     FILES
     Timevector.msg 
+ )
 
  add_service_files(
    FILES
-   AddTwoNum.srv
+   String.srv
  )
 
 # Generate added messages and services with any dependencies listed here
