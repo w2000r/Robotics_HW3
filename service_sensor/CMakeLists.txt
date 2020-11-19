@@ -1,18 +1,16 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(common_messages)
+project(service_sensor)
 
 find_package(catkin REQUIRED COMPONENTS
-  geometry_msgs
-  message_generation
+  geometry_msgs  
   rospy
   std_msgs
+  message_generation
 )
-
-
 # Generate messages in the 'msg' folder
  add_service_files(
    FILES
-   AddTwoNum.srv
+   String.srv
  )
 
 # Generate added messages and services with any dependencies listed here
@@ -23,7 +21,6 @@ find_package(catkin REQUIRED COMPONENTS
  )
 
 catkin_package(
-
   CATKIN_DEPENDS geometry_msgs rospy std_msgs
 )
 

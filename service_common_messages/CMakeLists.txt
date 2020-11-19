@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(common_messages)
+project(service_common_messages)
 
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
@@ -10,9 +10,14 @@ find_package(catkin REQUIRED COMPONENTS
 
 
 # Generate messages in the 'msg' folder
+ add_message_files(
+    FILES
+    Timevector.msg 
+ )
+
  add_service_files(
    FILES
-   AddTwoNum.srv
+   String.srv
  )
 
 # Generate added messages and services with any dependencies listed here
